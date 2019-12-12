@@ -17,6 +17,11 @@ $(document).ready(function() {
 	}, {
 		offset: '75%'
 	});
+	$('.wp10').waypoint(function() {
+		$('.wp10').addClass('animated fadeInRight');
+	}, {
+		offset: '75%'
+	});
 
 	/***************** Initiate Flexslider ******************/
 	$('.flexslider').flexslider({
@@ -46,7 +51,7 @@ $(document).ready(function() {
 		$('.header-nav').toggleClass('open');
 
 	});
-
+	
 	/***************** Header BG Scroll ******************/
 
 	$(function() {
@@ -56,7 +61,7 @@ $(document).ready(function() {
 			if (scroll >= 20) {
 				$('section.navigation').addClass('fixed');
 				$('header').css({
-					"border-bottom": "none",
+					"border-bottom": "1px solid rgba(0,26,60,.1)",
 					"padding": "35px 0"
 				});
 				$('header .member-actions').css({
@@ -97,7 +102,11 @@ $(document).ready(function() {
 				}
 			}
 		});
-
+		 $(".down-arrow").click(function() {
+        $('html, body').animate({
+            scrollTop: $(".intro").offset().top + 1
+        }, 2000);
+    });
 	});
 
 });
