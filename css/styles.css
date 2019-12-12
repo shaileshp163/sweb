@@ -761,7 +761,7 @@ Intro
 .testimonial-slider
 ========================================================================== */
 .testimonial-slider {
-  margin-top: 120px;
+  margin-top: 80px;
   background: url("../img/testimonials-bg.jpg") no-repeat center center;
   background-size: cover;
   position: relative; }
